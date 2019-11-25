@@ -1,9 +1,6 @@
 ## a) Run the database migration.
 Open command/shell prompt from the project root folder and then type and run the following commands
 
-composer install (Install dependencies)
-chmod -R 777 storage/
-php artisan key:generate
 php artisan migrate
 
 ## b) Run the unit test alone.
