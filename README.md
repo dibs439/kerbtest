@@ -1,2 +1,22 @@
-# kerbtest
-Test script for Kerb
+## a) Run the database migration.
+Open command/shell prompt from the project root folder and then type and run the following commands
+
+composer install (Install dependencies)
+chmod -R 777 storage/
+php artisan key:generate
+php artisan migrate
+
+## b) Run the unit test alone.
+From the same command prompt run the following command:
+
+./vendor/bin/phpunit tests/Unit/CalculatorTest.php
+
+## b) Run the integration test alone.
+From the same command prompt run the following command:
+
+./vendor/bin/phpunit tests/Integration/CalcTest.php
+
+## b) Run both tests together.
+From the same command prompt run the following command:
+
+./vendor/bin/phpunit
